@@ -36,34 +36,6 @@ class AppTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(3));
     }
 
-   /* @Test
-    void testPayName() {
-        assertEquals(pay.findElement(By.tagName("h2")).getText(), "Онлайн пополнение\n" + "без комиссии");
-    }
-
-    @Test
-    void testPartnersIconsVisible() {
-        List<WebElement> elements = pay.findElement(By.className("pay__partners")).findElements(By.tagName("img"));
-        for (WebElement element : elements
-        ) {
-            assertTrue(element.isDisplayed());
-        }
-    }
-
-    @Test
-    void testPodrobneeOserviseisWork() {
-        assertTrue(pay.findElement(By.linkText("Подробнее о сервисе")).isEnabled());
-    }
-
-    @Test
-    void testContinueButtom() {
-        assertEquals(pay.findElement(By.className("pay__form")).findElement(By.className("select__now")).getText(), "Услуги связи");
-        pay.findElement(By.className("phone")).sendKeys("297777777");
-        pay.findElement(By.className("total_rub")).sendKeys("123");
-        assertTrue(pay.findElement(By.xpath("//*[@id=\"pay-connection\"]/button")).isEnabled());
-
-    } */
-
     @Test
     void testCorrectPlaceHoldersUslugiSvyazi() throws InterruptedException {
         pay.findElement(By.className("select__header")).click();
