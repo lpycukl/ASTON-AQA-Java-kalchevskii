@@ -1,5 +1,9 @@
 ### IntelliJ IDEA ###
 out/
+.gradle 
+.idea 
+target 
+build
 
 ### Eclipse ###
 .apt_generated
